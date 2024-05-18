@@ -4,7 +4,7 @@ This repo serves as my learning journal throughout the years. Usually, I update 
 ## A. [Control](/Control/)
 ### [Advance Topics](/Control/Advance/)
 - [Nonlinear Control Theory](/Control/Advance/Nonlinear_control.pdf)
-- [Underactuated Robotics](/Control/Advance/Underactuated_robotics.pdf)
+- [MIT 6.8210 Underactuated Robotics](/Control/Advance/Underactuated_robotics.pdf)
 - [NLMPC](/Control/Advance/NLMPC.pdf)
 
 ### [Linear System](/Control/Linear-system/)
@@ -48,4 +48,4 @@ This repo serves as my learning journal throughout the years. Usually, I update 
   - [HKUST COMP5212 HW Repo](https://github.com/pattylo/COMP5212_Machine_Learning)
   - [HKUST COMP5212 Project Repo](https://github.com/pattylo/ledvo)
 ### [Deep Learning](/Machine_Learning/cs231n/)
-  - [CS231n](/Machine_Learning/cs231n/)
+  - [Stanford CS321n](/Machine_Learning/cs231n/)
