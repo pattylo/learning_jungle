@@ -16,7 +16,7 @@ This repo serves as my learning journal throughout the years. Usually, I update 
 ## B. [Sensing](/Sensing/)
 ### [Sensors](/Sensing/)
 - [PNP](/Sensing/CV/epnp_icpsvd_notes.pdf)
-- [GPS](/Sensing/GPS/AAE6102.pdf)_
+- [GPS](/Sensing/GPS/AAE6102.pdf)
 
 ### [Kalman Filtering](/Sensing/KF/)
 - [General KF 1](/Sensing/KF/KF_derivation.pdf)
