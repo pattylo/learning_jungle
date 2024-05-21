@@ -14,8 +14,9 @@ This repo serves as my learning journal throughout the years. Usually, I update 
 - [Bezier Curve](/Control/Traj-Opt/Minimum_snap_and_B%C3%A8zier.pdf)
 
 ## B. [Sensing](/Sensing/)
-### [Computer Vision](/Sensing/CV/)
+### [Sensors](/Sensing/)
 - [PNP](/Sensing/CV/epnp_icpsvd_notes.pdf)
+- [GPS](/Sensing/GPS/AAE6102.pdf)_
 
 ### [Kalman Filtering](/Sensing/KF/)
 - [General KF 1](/Sensing/KF/KF_derivation.pdf)
