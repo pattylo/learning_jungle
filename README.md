@@ -49,7 +49,7 @@ This repo serves as my learning journal throughout the years. Usually, I update 
 
 ## D. [Machine Learning](/Machine_Learning/)
 ### [Machine Learning](/Machine_Learning/COMP5212/)
-- HKUST COMP5212 Course (Linear Model, Theory of Generalization, Tree-based Models, Adversarial Learning)
+- HKUST COMP5212 Course (Linear Model, Theory of Generalization, NNs, Transformers, Tree-based Models, Adversarial Learning, Reinforcement Learning)
   - [HKUST COMP5212 Course Notes](/Machine_Learning/COMP5212/Final.pdf)
   - [HKUST COMP5212 HW Repo](https://github.com/pattylo/COMP5212_Machine_Learning)
   - [HKUST COMP5212 Project Repo](https://github.com/pattylo/ledvo)
