@@ -6,6 +6,11 @@ This repo serves as my learning journal throughout the years. Usually, I update 
 - [Nonlinear Control Theory](/Control/Advance/Nonlinear_control.pdf)
 - [MIT 6.8210 Underactuated Robotics](/Control/Advance/Underactuated_robotics.pdf)
 - [NLMPC](/Control/Advance/NLMPC.pdf)
+  
+### [Dynamics (ETH Robot Dynamics)](/Control/Dynamics/)
+- [Fundamentals of Kinematics and Dynamics](/Control/Dynamics/Fundamentals.pdf)
+- [Floated Systems](/Control/Dynamics/)
+
 
 ### [Linear System](/Control/Linear-system/)
 - [Control Bootcamp](/Control/Linear-system/Control_Bootcamp.pdf)
