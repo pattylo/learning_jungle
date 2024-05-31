@@ -9,7 +9,7 @@ This repo serves as my learning journal throughout the years. Usually, I update 
   
 ### [Dynamics (ETH Robot Dynamics)](/Control/Dynamics/)
 - [Fundamentals of Kinematics and Dynamics](/Control/Dynamics/Fundamentals.pdf)
-- [Floated Systems](/Control/Dynamics/)
+- [Floated Systems](/Control/Dynamics/Floating_base_sys.pdf)
 
 
 ### [Linear System](/Control/Linear-system/)
