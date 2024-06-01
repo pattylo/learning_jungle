@@ -1,5 +1,5 @@
 # My Study Notes
-This repo serves as my learning journal throughout the years. Usually, I update it once per semester. I don't think people are particularly interested, but below is the table of content to guide you (mostly me lah) through my the jungle; they are mostly related to robotics and autonomous systems.
+This repo serves as my learning journal throughout the years. Usually, I update it once per semester. I don't think people are particularly interested, but below is the table of content to guide you (mostly me lah) through the jungle; they are mostly related to robotics and autonomous systems.
 
 ## A. [Control](/Control/)
 ### [Advance Topics](/Control/Advance/)
