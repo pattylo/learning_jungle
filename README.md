@@ -48,6 +48,8 @@ This repo serves as my learning journal throughout the years. Usually, I update 
   - [PolyU AAE6202 Course Notes](/Math/Optimization/AAE6202_final.pdf)
 ### [Linear Algebra](/Math/Linear_algebra/)
   - [Matrices](/Math/Linear_algebra/Matrcies_manipulation.pdf)
+### [General Engineering Mathematics](/Math/ME564/)
+  - [UW ME564](/Math/ME564/)
 
 ## D. [Machine Learning](/Machine_Learning/)
 ### [Machine Learning](/Machine_Learning/COMP5212/)
