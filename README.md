@@ -8,10 +8,13 @@ This repo serves as my learning journal throughout the years. Usually, I update 
 - [Nonlinear Controllers](/Control/Advance/NL_control.pdf)
 - [NLMPC](/Control/Advance/NLMPC.pdf)
   
-### [Dynamics (ETH Robot Dynamics)](/Control/Dynamics/)
-- [Fundamentals of Kinematics and Dynamics](/Control/Dynamics/Fundamentals.pdf)
-- [Inverse Kinematics and Dynamics](/Control/Dynamics/InverseKD.pdf)
-- [Floated Systems](/Control/Dynamics/Floating_base_sys.pdf)
+### [Dynamics](/Control/Dynamics/)
+- ETH Robot Dynamics
+    - [Fundamentals of Kinematics and Dynamics](/Control/Dynamics/Fundamentals.pdf)
+    - [Inverse Kinematics and Dynamics](/Control/Dynamics/InverseKD.pdf)
+    - [Floated Systems](/Control/Dynamics/Floating_base_sys.pdf) 
+- Duke ME541 Very High Dimensional Systems
+    - [Very High Dimensional Systems](/Control/Dynamics/very_high_dim.pdf)
 
 ### [Linear System](/Control/Linear-system/)
 - [Control Bootcamp](/Control/Linear-system/Control_Bootcamp.pdf)
@@ -55,8 +58,12 @@ This repo serves as my learning journal throughout the years. Usually, I update 
 ## D. [Machine Learning](/Machine_Learning/)
 ### [Machine Learning](/Machine_Learning/COMP5212/)
 - HKUST COMP5212 Course (Linear Model, Theory of Generalization, NNs, Transformers, Tree-based Models, Adversarial Learning, Reinforcement Learning)
-  - [HKUST COMP5212 Course Notes](/Machine_Learning/COMP5212/Final.pdf)
-  - [HKUST COMP5212 HW Repo](https://github.com/pattylo/COMP5212_Machine_Learning)
-  - [HKUST COMP5212 Project Repo](https://github.com/pattylo/ledvo)
+  - [Course Notes](/Machine_Learning/COMP5212/Final.pdf)
+  - [HW Repo](https://github.com/pattylo/COMP5212_Machine_Learning)
+  - [Project Repo](https://github.com/pattylo/ledvo)
+- Duke ME555/CEE590
+    - [Course Notes](Machine_Learning/ME555/midterm_notes.pdf)
+    - [HW Repo](https://github.com/pattylo/CEE590_ML)
+    - [Project Repo](https://github.com/pattylo/CEE690_project_code)   
 ### [Deep Learning](/Machine_Learning/cs231n/)
   - [Stanford CS321n](/Machine_Learning/cs231n/)
