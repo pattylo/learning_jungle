@@ -14,7 +14,8 @@ This repo serves as my learning journal throughout the years. Usually, I update 
     - [Inverse Kinematics and Dynamics](/Control/Dynamics/InverseKD.pdf)
     - [Floated Systems](/Control/Dynamics/Floating_base_sys.pdf) 
 - Duke ME541 Very High Dimensional Systems
-    - [Very High Dimensional Systems](/Control/Dynamics/very_high_dim.pdf)
+    - [Notes](/Control/Dynamics/very_high_dim.pdf)
+    - [HW](https://github.com/pattylo/ME541_Very_High_Dimensional_Dynamics)
 
 ### [Linear System](/Control/Linear-system/)
 - [Control Bootcamp](/Control/Linear-system/Control_Bootcamp.pdf)
@@ -25,7 +26,9 @@ This repo serves as my learning journal throughout the years. Usually, I update 
 ## B. [Sensing](/Sensing/)
 ### [Sensors](/Sensing/)
 - [PNP](/Sensing/CV/epnp_icpsvd_notes.pdf)
-- [GPS](/Sensing/GPS/AAE6102.pdf)
+<!-- - [GPS](/Sensing/GPS/AAE6102.pdf) -->
+- [PolyU AAE6102 Course Notes](/Sensing/GPS/AAE6102.pdf)
+- [PolyU AAE6102 Course Lab](https://github.com/pattylo/AAE6102_lab)
 
 ### [Kalman Filtering](/Sensing/KF/)
 - [General KF 1](/Sensing/KF/KF_derivation.pdf)
@@ -46,7 +49,8 @@ This repo serves as my learning journal throughout the years. Usually, I update 
 ### [Optimization](/Math/Optimization/) 
 - Convex Optimization
   - [HKUST ELEC5470 Course Notes](/Math/Optimization/ELEC5470.pdf)
-  - [HKUST ELEC5470 Project Repo](https://github.com/pattylo/ELEC5470_Convex_Optimization.git)
+  - [HKUST ELEC5470 HW Repo](https://github.com/pattylo/ELEC5470_Convex_Optimization)
+  - [HKUST ELEC5470 Project](https://github.com/pattylo/ELEC5470_Convex_Optimization/tree/main/project)
   - [PolyU AAE6202 Course Notes](/Math/Optimization/AAE6202_midterm.pdf)
 - Stochastic Programming
   - [PolyU AAE6202 Course Notes](/Math/Optimization/AAE6202_final.pdf)
