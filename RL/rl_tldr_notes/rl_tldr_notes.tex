@@ -1,0 +1,230 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb, booktabs}
+\usepackage[margin=1in]{geometry}
+
+\title{RL \& DP Notes}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{1. Dynamic Programming (DP)}
+
+\textbf{Core Idea:} Solve Bellman equations using a known model.
+
+\[
+V(s) = \sum_{s'} P(s'|s,a)\big[r + \gamma V(s')\big]
+\]
+
+\begin{itemize}
+\item Requires full transition model.
+\item Uses expectation over all next states.
+\item Deterministic updates.
+\item Bootstraps using $V(s')$.
+\end{itemize}
+
+\textbf{Key Property:} Exact expectation backup.
+
+\vspace{1em}
+
+\section*{2. Monte Carlo (MC)}
+
+\textbf{Core Idea:} Learn from complete sampled episodes.
+
+Return:
+\[
+G_t = \sum_{k=0}^{T-t} \gamma^k r_{t+k+1}
+\]
+
+Update:
+\[
+V(s) \leftarrow V(s) + \alpha (G_t - V(s))
+\]
+
+\begin{itemize}
+\item No model required.
+\item No bootstrapping.
+\item High variance, low bias.
+\item Update only after episode ends.
+\end{itemize}
+
+\textbf{Key Property:} Sample-based full-return backup.
+
+\vspace{1em}
+
+\section*{3. Temporal Difference (TD)}
+
+\textbf{Core Idea:} Sample-based bootstrapping.
+
+TD(0) update:
+\[
+V(s) \leftarrow V(s) + \alpha \big[r + \gamma V(s') - V(s)\big]
+\]
+
+TD error:
+\[
+\delta = r + \gamma V(s') - V(s)
+\]
+
+\begin{itemize}
+\item No model required.
+\item Bootstraps.
+\item Lower variance than MC.
+\item Sample-based approximation of DP.
+\end{itemize}
+
+\textbf{Key Difference:}
+\begin{itemize}
+\item DP = expectation backup
+\item TD = sample backup
+\end{itemize}
+
+\vspace{1em}
+
+\section*{4. Value-Based vs Policy-Based RL}
+
+\subsection*{Value-Based (e.g., Q-learning)}
+
+\[
+Q(s,a) \leftarrow r + \gamma \max_{a'} Q(s',a')
+\]
+
+\begin{itemize}
+\item Learn value function.
+\item Derive policy via $\arg\max$.
+\item Off-policy (greedy target, exploratory behavior).
+\end{itemize}
+
+\subsection*{Policy Gradient (PG)}
+
+\[
+\nabla_\theta J(\theta) =
+\mathbb{E}\big[\nabla_\theta \log \pi_\theta(a|s) A(s,a)\big]
+\]
+
+\begin{itemize}
+\item Directly optimize policy.
+\item No $\arg\max$ derivation.
+\item Advantage reduces variance.
+\end{itemize}
+
+\vspace{1em}
+
+\section*{5. Advantage \& GAE}
+
+Advantage:
+\[
+A(s,a) = Q(s,a) - V(s)
+\]
+
+TD error:
+\[
+\delta_t = r_t + \gamma V(s_{t+1}) - V(s_t)
+\]
+
+GAE:
+\[
+A_t = \sum_{l=0}^{\infty} (\gamma \lambda)^l \delta_{t+l}
+\]
+
+\begin{itemize}
+\item $\lambda=0$ $\rightarrow$ TD (low variance, high bias)
+\item $\lambda=1$ $\rightarrow$ MC (low bias, high variance)
+\end{itemize}
+
+\textbf{GAE interpolates between TD and MC.}
+
+\vspace{1em}
+
+\section*{6. PPO (Proximal Policy Optimization)}
+
+Ratio:
+\[
+r_t(\theta) =
+\frac{\pi_\theta(a_t|s_t)}
+{\pi_{\text{old}}(a_t|s_t)}
+\]
+
+Clipped objective:
+\[
+L =
+\min\Big(
+r_t A_t,
+\text{clip}(r_t, 1-\epsilon, 1+\epsilon)A_t
+\Big)
+\]
+
+\begin{itemize}
+\item On-policy.
+\item Actor-Critic.
+\item Uses GAE for advantages.
+\item Clipping approximates trust region.
+\item KL monitors policy shift.
+\end{itemize}
+
+\textbf{Core Idea:} Improve policy without large destructive updates.
+
+\vspace{1em}
+
+\section*{7. DP vs TD vs RL vs ADP}
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+Method & Model & Sampling & Bootstrapping \\
+\midrule
+DP & Yes & No & Yes \\
+MC & No & Yes & No \\
+TD & No & Yes & Yes \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Insight:}
+RL can be viewed as data-driven Approximate Dynamic Programming (ADP).
+
+\vspace{1em}
+
+\section*{8. DDP (Differential Dynamic Programming)}
+
+\textbf{Core Idea:} Second-order trajectory optimization.
+
+\begin{itemize}
+\item Requires differentiable model.
+\item Uses local quadratic expansions.
+\item Solves finite-horizon optimal control.
+\item Often used inside MPC.
+\end{itemize}
+
+\textbf{If model is differentiable:}
+\[
+\nabla_\theta J = \text{Backprop through dynamics}
+\]
+
+DDP operates in model-based optimal control regime.
+
+\vspace{1em}
+
+\section*{9. Conceptual Unification}
+
+All methods originate from the Bellman principle.
+
+\begin{itemize}
+\item DP: exact Bellman solution.
+\item TD: stochastic Bellman approximation.
+\item RL: model-free Bellman learning.
+\item PG: direct optimization of expected return.
+\item PPO: stable policy gradient with trust control.
+\item DDP: differentiable optimal control via second-order methods.
+\end{itemize}
+
+\textbf{Grand View:}
+
+\[
+\text{Control} \rightarrow \text{Dynamic Programming} \rightarrow
+\text{Approximation} \rightarrow \text{Reinforcement Learning}
+\]
+
+\end{document}
